@@ -6,10 +6,16 @@
 
 ## 👥 Anggota Kelompok 6 (Informatika A)
 1. **Dimas Aprilino** - `IK2411044`
+        Kontribusi: Membuat perhitungan nilai akhir menggunakan variabel
 2. **Jack Stiven** - `IK2411062`
+        Kontribusi: Membuat dokumentasi, laporan PDF, README GitHub, dan pengujian 
+        program 
 3. **Fauzan Azima** - `IK2411039`
+        Kontribusi: Membuat implicit cursor, explicit cursor, dan cursor dengan parameter
 4. **Gefran** - `IK2411029`
+        Kontribusi: Membuat database, tabel, relasi, dan data awal 
 5. **Zadly Baan** - `IK2411030`
+        Kontribusi: Membuat percabangan grade, bobot, status kelulusan, dan perulangan
 
 ---
 
