@@ -27,7 +27,7 @@ Sistem ini mentransformasi proses kalkulasi manual (seperti penggunaan Excel) ke
 
 ---
 
-## 🛠️ Struktur & Relasi Tabel
+##  Struktur & Relasi Tabel
 Sistem dibangun di atas database `uts_pbd_kelompok_6` yang mengintegrasikan 6 tabel utama secara konsisten:
 
 1. **`mahasiswa`**: Menyimpan identitas mahasiswa (NIM, Nama, Kelas, Angkatan).
