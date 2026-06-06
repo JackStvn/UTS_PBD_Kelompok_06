@@ -6,15 +6,23 @@
 
 ## 👥 Pembagian Tugas Anggota Kelompok
 
-Untuk memastikan transparansi dan akuntabilitas pengerjaan projek UTS Pemrograman Basis Data ini, berikut adalah rincian pembagian tugas dan kontribusi nyata dari masing-masing anggota Kelompok 6:
+Untuk memastikan transparansi dan akuntabilitas pengerjaan projek UTS Pemrograman Basis Data ini, berikut adalah rincian pembagian tugas dan kontribusi nyata dari masing-masing anggota Kelompok 6 berdasarkan format resmi yang diinstruksikan:
 
-| No | Nama Anggota | NIM | Porsi Kontribusi & Tanggung Jawab |
-|:--:|:---|:---:|:---|
-| 1 | **Dimas Aprilino** | `NIM_ANGGOTA_1` | • Merancang struktur komprehensif skema Relasional Database.<br>• Membuat berkas master database (`uts_pbd_kelompok_6.sql`).<br>• Mengonfigurasi Constraints, Foreign Key, dan data awal (*dummy data*) tabel master (`mahasiswa`, `dosen`, `mata_kuliah`, `grade_nilai`). |
-| 2 | **Jack Stiven** | `NIM_ANGGOTA_2` | • Menyusun struktur algoritma *Explicit Cursor* dan penanganan *Looping*.<br>• Membangun arsitektur program utama pada Stored Procedure massal (`rekap_semua_nilai`).<br>• Mengonfigurasi logika klasifikasi Nilai Akhir menggunakan struktur `CASE WHEN`. |
-| 3 | **Nama Anggota 3** | `NIM_ANGGOTA_3` | • Mengembangkan fitur modular Stored Procedure berparameter (`rekap_nilai_per_mk`).<br>• Mengonfigurasi skema pengkondisian batas ambang grade kelulusan akademis.<br>• Melakukan integrasi relasi penentuan bobot angka IPK ke tabel nilai praktikum. |
-| 4 | **Nama Anggota 4** | `NIM_ANGGOTA_4` | • Merancang sistem keamanan *Audit Trail* dan pembuatan struktur tabel `log_rekap_nilai`.<br>• Mengonfigurasi fungsi `ROW_COUNT()` dan pencatatan riwayat otomatis ke dalam tabel log.<br>• Melakukan *debugging* syntax error dan validasi data sebelum prosedur dieksekusi. |
-| 5 | **Nama Anggota 5** | `NIM_ANGGOTA_5` | • Melakukan pengujian sistem (*testing program*) menyeluruh melalui tab SQL phpMyAdmin.<br>• Mengambil dokumentasi visual (*screenshot*) kondisi data awal, proses `CALL`, hingga kondisi akhir.<br>• Menyusun dokumen laporan utama projek dan mengelola file dokumentasi `README.md` GitHub. |
+* **Dimas Aprilino** (`IK2411044`)
+  Kontribusi: Membuat perhitungan nilai akhir menggunakan variabel.
+
+* **Jack Stiven** (`IK2411062`)
+  Kontribusi: Membuat dokumentasi, laporan PDF, README GitHub, dan pengujian 
+program.
+
+* **Fauzan Azima** (`IK2411039`)
+  Kontribusi: Membuat implicit cursor, explicit cursor, dan cursor dengan parameter.
+
+* **Gefran** (`IK2411029`)
+  Kontribusi: Membuat database, tabel, relasi, dan data awal.
+
+* **Zadly Baan** (`IK2411030`)
+  Kontribusi: Membuat percabangan grade, bobot, status kelulusan, dan perulangan.
 
 ---
 
