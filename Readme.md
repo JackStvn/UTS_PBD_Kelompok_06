@@ -7,7 +7,7 @@
 
 ## 👥 Profil Kelompok
 * **Nama Kelompok:** Kelompok 6
-* **Kelas:** Informatika A
+* **Kelas:** Reguler
 
 ### Daftar Anggota Kelompok:
 1. **Dimas Aprilino** - `IK2411044`
