@@ -1,10 +1,10 @@
-# 📊 Sistem Rekap Nilai Praktikum Mahasiswa
+##  Sistem Rekap Nilai Praktikum Mahasiswa
 > **Projek Praktik / Coding Test — Ujian Tengah Semester (UTS) Pemrograman Basis Data**
 > **Program Studi S1 Informatika — Fakultas Ilmu Komputer — Universitas Mega Buana Palopo (2026)**
 
 ---
 
-## 👥 Anggota Kelompok 6 (Informatika A)
+##  Anggota Kelompok 6 (Informatika A)
 1. **Dimas Aprilino** - `IK2411044`
         Kontribusi: Membuat perhitungan nilai akhir menggunakan variabel
 2. **Jack Stiven** - `IK2411062`
@@ -19,12 +19,12 @@
 
 ---
 
-## 📝 Deskripsi Sistem
+##  Deskripsi Sistem
 Projek ini merupakan implementasi sistem database relasional untuk otomatisasi pengelolaan nilai praktikum mahasiswa menggunakan **MySQL/MariaDB** di phpMyAdmin. 
 
 Sistem ini mentransformasi proses kalkulasi manual (seperti penggunaan Excel) ke dalam mesin otomatisasi database lewat *Stored Procedure*. Saat prosedur dieksekusi, database secara mandiri membaca nilai mentah (Tugas, Kuis, UTS), menghitung nilai akhir, menentukan grade beserta bobotnya, mendeteksi status kelulusan, dan mencatat seluruh jejak riwayat proses (*audit trail*) ke dalam tabel log secara real-time.
 
-### 🎯 Fitur & Konsep PL/SQL yang Diterapkan:
+###  Fitur & Konsep PL/SQL yang Diterapkan:
 - **Variabel Lokal:** Berfungsi menampung memori kalkulasi sementara saat rumus persentase nilai sedang diproses.
 - **Struktur Percabangan (`CASE WHEN`):** Menerapkan logika klasifikasi grade dan ambang batas kelulusan berdasarkan regulasi akademik.
 - **Perulangan & Explicit Cursor:** Membaca dan memproses kumpulan data nilai mahasiswa baris demi baris di memori secara aman tanpa ada data yang terlewat.
@@ -33,7 +33,7 @@ Sistem ini mentransformasi proses kalkulasi manual (seperti penggunaan Excel) ke
 
 ---
 
-## 🛠️ Struktur & Relasi Tabel
+##  Struktur & Relasi Tabel
 Sistem dibangun di atas database `uts_pbd_kelompok_6` yang mengintegrasikan 6 tabel utama secara konsisten:
 
 1. **`mahasiswa`**: Menyimpan identitas mahasiswa (NIM, Nama, Kelas, Angkatan).
@@ -43,7 +43,7 @@ Sistem dibangun di atas database `uts_pbd_kelompok_6` yang mengintegrasikan 6 ta
 5. **`nilai_praktikum`**: Menyimpan record nilai akademis (kolom hasil kalkulasi dikosongkan/`NULL` di awal dan diisi otomatis oleh prosedur).
 6. **`log_rekap_nilai`**: Menyimpan riwayat eksekusi sistem sebagai dokumentasi keamanan data nilai.
 
-### 📐 Pemetaan Dosen & Mata Kuliah (1 MK = 1 Dosen)
+###  Pemetaan Dosen & Mata Kuliah (1 MK = 1 Dosen)
 Untuk akurasi data, relasi dosen pengampu telah dikonfigurasi secara seimbang:
 - **`MK_PBD`** (Pemrograman Basis Data) ➡️ **Abdul Malik, S.Kom., M.Cs.**
 - **`MK_RPL`** (Rekayasa Perangkat Lunak) ➡️ **Hasanuddin, S.Kom., M.Kom.**
@@ -51,7 +51,7 @@ Untuk akurasi data, relasi dosen pengampu telah dikonfigurasi secara seimbang:
 
 ---
 
-## 🧮 Logika Perhitungan & Aturan Akademik
+##  Logika Perhitungan & Aturan Akademik
 
 ### 1. Rumus Nilai Akhir
 Nilai Akhir = (Nilai Tugas * 30%) + (Nilai Kuis * 30%) + (Nilai UTS * 40%)
@@ -74,7 +74,7 @@ Nilai Akhir = (Nilai Tugas * 30%) + (Nilai Kuis * 30%) + (Nilai UTS * 40%)
 
 ---
 
-## 🚀 Panduan Instalasi & Pengujian Program
+##  Panduan Instalasi & Pengujian Program
 
 ### 1. Persiapan Database (Import Skema & Data Awal)
 1. Aktifkan modul **Apache** dan **MySQL** pada **XAMPP Control Panel**.
@@ -88,7 +88,7 @@ Proses ini digunakan untuk memproses kalkulasi nilai seluruh mahasiswa di semua 
 ### 3. Menguji Stored Procedure Filter (Per Mata Kuliah)
 Proses ini digunakan untuk melakukan rekapitulasi nilai mahasiswa secara spesifik pada satu jenis mata kuliah pilihan tertentu saja dengan memasukkan parameter yang sesuai pada tab SQL phpMyAdmin.
 
-> 📌 **Catatan:** Pilihan kode mata kuliah pengujian yang valid dan terdaftar di dalam sistem database kelompok kami meliputi:
+>  **Catatan:** Pilihan kode mata kuliah pengujian yang valid dan terdaftar di dalam sistem database kelompok kami meliputi:
 > - `MK_PBD` untuk mata kuliah Pemrograman Basis Data.
 > - `MK_RPL` untuk mata kuliah Rekayasa Perangkat Lunak.
 > - `MK_ADSI` untuk mata kuliah Analisis Desain Sistem Informasi.
@@ -102,7 +102,7 @@ Proses ini digunakan untuk melakukan rekapitulasi nilai mahasiswa secara spesifi
 
 ---
 
-## 📜 Surat Pernyataan Kontribusi
+##  Surat Pernyataan Kontribusi
 Dengan ini kami menyatakan bahwa projek UTS Pemrograman Basis Data ini dikerjakan oleh kelompok kami sendiri. Setiap anggota telah berkontribusi sesuai dengan pembagian tugas masing-masing. Apabila di kemudian hari ditemukan tindakan plagiasi atau ketidakjujuran akademik, kami siap menerima segala konsekuensi penilaian dari dosen pengampu.
 
 * **Dosen Pengampu:** Abdul Malik, S.Kom., M.Cs.
