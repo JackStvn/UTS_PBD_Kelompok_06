@@ -1,11 +1,11 @@
-# 📊 Sistem Rekap Nilai Praktikum Mahasiswa
+#  Sistem Rekap Nilai Praktikum Mahasiswa
 
-### 📑 Projek Praktik / Coding Test — Ujian Tengah Semester (UTS) Pemrograman Basis Data
-### 🎓 Program Studi S1 Informatika — Fakultas Ilmu Komputer — Universitas Mega Buana Palopo (2026)
+###  Projek Praktik / Coding Test — Ujian Tengah Semester (UTS) Pemrograman Basis Data
+###  Program Studi S1 Informatika — Fakultas Ilmu Komputer — Universitas Mega Buana Palopo (2026)
 
 ---
 
-## 👥 Profil Kelompok
+##  Profil Kelompok
 * **Nama Kelompok:** Kelompok 6
 * **Kelas:** Reguler
 
@@ -18,14 +18,14 @@
 
 ---
 
-## 📝 Deskripsi Sistem
+##  Deskripsi Sistem
 Projek ini merupakan implementasi sistem database relasional untuk mengotomatisasi pengelolaan rekapitulasi nilai praktikum mahasiswa menggunakan **MySQL/MariaDB** di phpMyAdmin. 
 
 Sistem ini mentransformasi proses kalkulasi manual konvensional (seperti penggunaan spreadsheet) ke dalam mesin otomatisasi database lewat *Stored Procedure*. Saat prosedur dieksekusi, database secara mandiri memindai kumpulan data menggunakan *Explicit Cursor*, membaca nilai mentah (Tugas, Kuis, UTS), menghitung nilai akhir dengan bobot persentase tertentu, menentukan grade beserta bobotnya menggunakan percabangan `CASE WHEN`, mendeteksi status kelulusan, dan mencatat seluruh jejak riwayat pemrosesan (*audit trail*) ke dalam tabel log secara real-time.
 
 ---
 
-## 🛠️ Struktur Tabel
+##  Struktur Tabel
 Sistem ini dibangun di atas database `uts_pbd_kelompok_6` yang mengintegrasikan 6 tabel utama dengan aturan *Foreign Key Constraints* untuk menjaga integritas data relasional:
 
 1. **`mahasiswa`**: Menyimpan identitas induk mahasiswa (NIM, Nama, Kelas, Angkatan).
@@ -37,7 +37,7 @@ Sistem ini dibangun di atas database `uts_pbd_kelompok_6` yang mengintegrasikan 
 
 ---
 
-## 🚀 Cara Menjalankan Program
+##  Cara Menjalankan Program
 
 ### 1. Persiapan Database
 1. Aktifkan modul **Apache** dan **MySQL** pada **XAMPP Control Panel**.
@@ -52,7 +52,7 @@ Sistem ini dibangun di atas database `uts_pbd_kelompok_6` yang mengintegrasikan 
 
 ---
 
-## 💾 Daftar Stored Procedure
+##  Daftar Stored Procedure
 Sistem database kelompok kami mengimplementasikan dua jenis objek prosedural utama:
 
 1. **`rekap_semua_nilai`**
@@ -62,7 +62,7 @@ Sistem database kelompok kami mengimplementasikan dua jenis objek prosedural uta
 
 ---
 
-## 📋 Pembagian Tugas Anggota
+##  Pembagian Tugas Anggota
 
 * **Dimas Aprilino** (`IK2411044`)
   Kontribusi: Membuat perhitungan nilai akhir menggunakan variabel.
